@@ -24,7 +24,7 @@ namespace Negocio
             conexion = new SqlConnection("server = .\\SQLEXPRESS; database = POKEDEX_DB; integrated security = true;");
             comando = new SqlCommand();
         }
-        public void SetConsulta (string consulta)
+        public void SetConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
@@ -43,8 +43,33 @@ namespace Negocio
 
                 throw ex;
             }
-            
+
+        } 
+
+        public void EjecutarAccion()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                lector = comando.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
+        public void SetParametrosInt(string numero, object valor)
+        {
+            int number = Convert.ToInt32(numero);
+            comando.Parameters.AddWithValue(numero, valor);
+        }
+        public void SetParametros(string nombre, object valor)
+        {
+            comando.Parameters.AddWithValue(nombre, valor);
+        }
+
         public void CerrarConexion()
         {           
                 if (Lector != null)

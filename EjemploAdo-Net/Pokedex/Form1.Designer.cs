@@ -39,8 +39,11 @@
             // 
             this.DGVPokemon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DGVPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVPokemon.Location = new System.Drawing.Point(119, 38);
+            this.DGVPokemon.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.DGVPokemon.Location = new System.Drawing.Point(119, 21);
+            this.DGVPokemon.MultiSelect = false;
             this.DGVPokemon.Name = "DGVPokemon";
+            this.DGVPokemon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVPokemon.Size = new System.Drawing.Size(599, 219);
             this.DGVPokemon.TabIndex = 0;
             this.DGVPokemon.SelectionChanged += new System.EventHandler(this.DGVPokemon_SelectionChanged);
@@ -48,7 +51,7 @@
             // PcBxPokemon
             // 
             this.PcBxPokemon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PcBxPokemon.Location = new System.Drawing.Point(743, 38);
+            this.PcBxPokemon.Location = new System.Drawing.Point(743, 21);
             this.PcBxPokemon.Name = "PcBxPokemon";
             this.PcBxPokemon.Size = new System.Drawing.Size(260, 219);
             this.PcBxPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -57,7 +60,8 @@
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(128, 291);
+            this.BtnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnAgregar.Location = new System.Drawing.Point(128, 274);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(175, 53);
             this.BtnAgregar.TabIndex = 2;
@@ -69,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 502);
+            this.ClientSize = new System.Drawing.Size(1015, 469);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.PcBxPokemon);
             this.Controls.Add(this.DGVPokemon);

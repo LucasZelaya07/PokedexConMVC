@@ -49,6 +49,9 @@ namespace Negocio
                     //Le declaro que lo que va a recibir es un string
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
+                    //Creo un if para que en caso de que la url sea nula en la base de datos
+                    //la aplicación no la lea y no se rompa
+                    if(!(lector.IsDBNull(lector.GetOrdinal("UrlImagen"))))
                     aux.UrlImagen = (string)lector["UrlImagen"];
                     //Genero una instancia para que no tenga un error "null"
                     aux.Tipo = new Elemento();
@@ -81,12 +84,21 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-               
+                datos.SetConsulta("Insert into POKEMONS (Numero, Nombre, Descripcion, Activo, IdTipo, IdDebilidad, UrlImagen) values(" + nuevo.Numero + ", '" + nuevo.Nombre + "', '" + nuevo.Descripcion + "' , 1, @IdTipo, @IdDebilidad, @UrlImagen)");
+                datos.SetParametros("@IdTipo",nuevo.Tipo.Id);
+                datos.SetParametros("@IdDebilidad", nuevo.Debilidad.Id);
+                datos.SetParametros("@UrlImagen", nuevo.UrlImagen);
+                datos.EjecutarAccion();
+
             }
             catch (Exception ex)
             {
 
                 throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
             }
         }
 
