@@ -44,6 +44,7 @@
             this.TxtBxUrlImagen = new System.Windows.Forms.TextBox();
             this.LblUrlImagen = new System.Windows.Forms.Label();
             this.PctBxImagen = new System.Windows.Forms.PictureBox();
+            this.BtnUrlImagen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PctBxImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.LblNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblNumero.AutoSize = true;
             this.LblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNumero.Location = new System.Drawing.Point(52, 44);
+            this.LblNumero.Location = new System.Drawing.Point(35, 38);
             this.LblNumero.Name = "LblNumero";
             this.LblNumero.Size = new System.Drawing.Size(65, 20);
             this.LblNumero.TabIndex = 0;
@@ -63,7 +64,7 @@
             this.LblNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblNombre.AutoSize = true;
             this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(52, 94);
+            this.LblNombre.Location = new System.Drawing.Point(35, 82);
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(65, 20);
             this.LblNombre.TabIndex = 1;
@@ -74,7 +75,7 @@
             this.LblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblDescripcion.AutoSize = true;
             this.LblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDescripcion.Location = new System.Drawing.Point(52, 134);
+            this.LblDescripcion.Location = new System.Drawing.Point(35, 126);
             this.LblDescripcion.Name = "LblDescripcion";
             this.LblDescripcion.Size = new System.Drawing.Size(92, 20);
             this.LblDescripcion.TabIndex = 2;
@@ -84,7 +85,7 @@
             // 
             this.TxBxNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxBxNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxBxNumero.Location = new System.Drawing.Point(172, 38);
+            this.TxBxNumero.Location = new System.Drawing.Point(190, 38);
             this.TxBxNumero.Name = "TxBxNumero";
             this.TxBxNumero.Size = new System.Drawing.Size(185, 26);
             this.TxBxNumero.TabIndex = 0;
@@ -93,7 +94,7 @@
             // 
             this.TxBxNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxBxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxBxNombre.Location = new System.Drawing.Point(172, 88);
+            this.TxBxNombre.Location = new System.Drawing.Point(190, 81);
             this.TxBxNombre.Name = "TxBxNombre";
             this.TxBxNombre.Size = new System.Drawing.Size(185, 26);
             this.TxBxNombre.TabIndex = 1;
@@ -102,7 +103,7 @@
             // 
             this.TxBxDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxBxDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxBxDescripcion.Location = new System.Drawing.Point(172, 128);
+            this.TxBxDescripcion.Location = new System.Drawing.Point(190, 124);
             this.TxBxDescripcion.MaxLength = 50;
             this.TxBxDescripcion.Name = "TxBxDescripcion";
             this.TxBxDescripcion.Size = new System.Drawing.Size(185, 26);
@@ -111,7 +112,7 @@
             // BtnAceptar
             // 
             this.BtnAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnAceptar.Location = new System.Drawing.Point(56, 306);
+            this.BtnAceptar.Location = new System.Drawing.Point(35, 302);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(88, 35);
             this.BtnAceptar.TabIndex = 6;
@@ -122,7 +123,7 @@
             // BtnCancelar
             // 
             this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCancelar.Location = new System.Drawing.Point(272, 317);
+            this.BtnCancelar.Location = new System.Drawing.Point(290, 300);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(85, 34);
             this.BtnCancelar.TabIndex = 7;
@@ -135,7 +136,7 @@
             this.LblAltaPokemon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblAltaPokemon.AutoSize = true;
             this.LblAltaPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAltaPokemon.Location = new System.Drawing.Point(263, 9);
+            this.LblAltaPokemon.Location = new System.Drawing.Point(341, 9);
             this.LblAltaPokemon.Name = "LblAltaPokemon";
             this.LblAltaPokemon.Size = new System.Drawing.Size(190, 25);
             this.LblAltaPokemon.TabIndex = 8;
@@ -148,7 +149,7 @@
             this.CmbBxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbBxTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbBxTipo.FormattingEnabled = true;
-            this.CmbBxTipo.Location = new System.Drawing.Point(172, 217);
+            this.CmbBxTipo.Location = new System.Drawing.Point(190, 210);
             this.CmbBxTipo.Name = "CmbBxTipo";
             this.CmbBxTipo.Size = new System.Drawing.Size(185, 28);
             this.CmbBxTipo.TabIndex = 4;
@@ -159,7 +160,7 @@
             this.CmbBxDebilidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbBxDebilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbBxDebilidad.FormattingEnabled = true;
-            this.CmbBxDebilidad.Location = new System.Drawing.Point(172, 252);
+            this.CmbBxDebilidad.Location = new System.Drawing.Point(190, 255);
             this.CmbBxDebilidad.Name = "CmbBxDebilidad";
             this.CmbBxDebilidad.Size = new System.Drawing.Size(185, 28);
             this.CmbBxDebilidad.TabIndex = 5;
@@ -169,7 +170,7 @@
             this.LblTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblTipo.AutoSize = true;
             this.LblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTipo.Location = new System.Drawing.Point(52, 217);
+            this.LblTipo.Location = new System.Drawing.Point(35, 214);
             this.LblTipo.Name = "LblTipo";
             this.LblTipo.Size = new System.Drawing.Size(39, 20);
             this.LblTipo.TabIndex = 11;
@@ -180,7 +181,7 @@
             this.LblDebilidad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblDebilidad.AutoSize = true;
             this.LblDebilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDebilidad.Location = new System.Drawing.Point(52, 252);
+            this.LblDebilidad.Location = new System.Drawing.Point(35, 258);
             this.LblDebilidad.Name = "LblDebilidad";
             this.LblDebilidad.Size = new System.Drawing.Size(75, 20);
             this.LblDebilidad.TabIndex = 12;
@@ -190,7 +191,7 @@
             // 
             this.TxtBxUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtBxUrlImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxUrlImagen.Location = new System.Drawing.Point(172, 171);
+            this.TxtBxUrlImagen.Location = new System.Drawing.Point(190, 167);
             this.TxtBxUrlImagen.Name = "TxtBxUrlImagen";
             this.TxtBxUrlImagen.Size = new System.Drawing.Size(185, 26);
             this.TxtBxUrlImagen.TabIndex = 3;
@@ -201,7 +202,7 @@
             this.LblUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblUrlImagen.AutoSize = true;
             this.LblUrlImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUrlImagen.Location = new System.Drawing.Point(52, 177);
+            this.LblUrlImagen.Location = new System.Drawing.Point(35, 170);
             this.LblUrlImagen.Name = "LblUrlImagen";
             this.LblUrlImagen.Size = new System.Drawing.Size(87, 20);
             this.LblUrlImagen.TabIndex = 13;
@@ -210,19 +211,31 @@
             // PctBxImagen
             // 
             this.PctBxImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PctBxImagen.Location = new System.Drawing.Point(426, 38);
+            this.PctBxImagen.Location = new System.Drawing.Point(601, 36);
             this.PctBxImagen.Name = "PctBxImagen";
             this.PctBxImagen.Size = new System.Drawing.Size(260, 242);
             this.PctBxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PctBxImagen.TabIndex = 15;
             this.PctBxImagen.TabStop = false;
             // 
+            // BtnUrlImagen
+            // 
+            this.BtnUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnUrlImagen.Location = new System.Drawing.Point(394, 167);
+            this.BtnUrlImagen.Name = "BtnUrlImagen";
+            this.BtnUrlImagen.Size = new System.Drawing.Size(23, 23);
+            this.BtnUrlImagen.TabIndex = 16;
+            this.BtnUrlImagen.Text = "+";
+            this.BtnUrlImagen.UseVisualStyleBackColor = true;
+            this.BtnUrlImagen.Click += new System.EventHandler(this.BtnUrlImagen_Click);
+            // 
             // FrmAltaPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(698, 363);
+            this.ClientSize = new System.Drawing.Size(873, 363);
+            this.Controls.Add(this.BtnUrlImagen);
             this.Controls.Add(this.PctBxImagen);
             this.Controls.Add(this.TxtBxUrlImagen);
             this.Controls.Add(this.LblUrlImagen);
@@ -267,5 +280,6 @@
         private System.Windows.Forms.TextBox TxtBxUrlImagen;
         private System.Windows.Forms.Label LblUrlImagen;
         private System.Windows.Forms.PictureBox PctBxImagen;
+        private System.Windows.Forms.Button BtnUrlImagen;
     }
 }

@@ -11,6 +11,7 @@ namespace Dominio
     {
         //Esta clase da el formato del objeto que manipularé en la app
         [DisplayName("Número")]
+        public int Id { get; set; }
         public int Numero { get; set; }
         public string Nombre { get; set; }
         [DisplayName("Descripción")]
